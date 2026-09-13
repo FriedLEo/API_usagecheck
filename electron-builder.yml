@@ -1,5 +1,5 @@
-appId: com.deepseekusagetracker.windows
-productName: DeepSeek Usage Tracker
+appId: com.apitrackdesktop.windows
+productName: API track desktop
 directories:
   output: release
 files:
@@ -11,7 +11,7 @@ win:
   target:
     - target: nsis
       arch: [x64]
-  artifactName: DeepSeek-Usage-Tracker-${version}-${arch}.${ext}
+  artifactName: API-track-desktop-${version}-${arch}.${ext}
   verifyUpdateCodeSignature: false
 nsis:
   oneClick: false
@@ -19,4 +19,4 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   createStartMenuShortcut: true
-  shortcutName: DeepSeek Usage Tracker
+  shortcutName: API track desktop

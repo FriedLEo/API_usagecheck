@@ -2,7 +2,7 @@
   "name": "deepseek-usage-tracker-win",
   "version": "0.1.0",
   "private": true,
-  "description": "A secure floating Windows dashboard for DeepSeek balance, usage, and pricing.",
+  "description": "A floating Windows dashboard for DeepSeek balance, usage and pricing, plus OpenCode Zen Go subscription quota.",
   "main": "out/main/index.js",
   "license": "MIT",
   "engines": {
@@ -51,5 +51,5 @@
     "vite": "7.3.6",
     "vitest": "5.0.0"
   },
-  "author": "DeepSeek Usage Tracker contributors"
+  "author": "API track desktop contributors"
 }

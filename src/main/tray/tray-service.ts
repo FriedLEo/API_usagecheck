@@ -15,7 +15,7 @@ const trayIconPng = 'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAkUlEQVR42u2
 export function createTray(actions: TrayActions): Tray {
   const image = nativeImage.createFromDataURL(`data:image/png;base64,${trayIconPng}`)
   const tray = new Tray(image.resize({ width: 16, height: 16 }))
-  tray.setToolTip('DeepSeek Usage Tracker')
+  tray.setToolTip('API track desktop')
   tray.setContextMenu(Menu.buildFromTemplate([
     { label: 'Show tracker', click: actions.show },
     { label: 'Hide tracker', click: actions.hide },

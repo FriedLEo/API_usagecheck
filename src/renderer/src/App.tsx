@@ -42,7 +42,7 @@ export function App(): React.JSX.Element {
     try { setSnapshot(await window.usageTracker.refresh()) } finally { setBusy(false) }
   }
 
-  if (!bootstrap || !snapshot) return <main className="loading-shell"><div className="brand-mark">DS</div><h1>DeepSeek Usage Tracker</h1><p>Preparing your overview…</p></main>
+  if (!bootstrap || !snapshot) return <main className="loading-shell"><div className="brand-mark">AT</div><h1>API track desktop</h1><p>Preparing your overview…</p></main>
 
   const openProvider = (next: ProviderView): void => { setNav('forward'); setView(next) }
   const openSettings = (): void => {
@@ -61,7 +61,7 @@ export function App(): React.JSX.Element {
       <header className="titlebar">
         <div className="product">
           {view !== 'home' && <button className="back" title="Back" onClick={goBack}>←</button>}
-          <div><b>{viewTitle(view)}</b><small>Usage Tracker</small></div>
+          <div><b>{viewTitle(view)}</b><small>API track desktop</small></div>
         </div>
         <nav>
           <button title="Refresh" onClick={() => void refresh()} disabled={busy}>{busy ? '···' : '↻'}</button>

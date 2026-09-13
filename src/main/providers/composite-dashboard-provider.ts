@@ -14,7 +14,7 @@ import type { ProviderManifest } from '../../shared/contracts/provider'
  * handler — updates the secondary source too, with no second scheduler and no torn
  * snapshot (both sources are awaited before the snapshot is returned).
  *
- * The window is still branded "DeepSeek Usage Tracker" and `providerId` stays
+ * The window shows the current provider name in its titlebar, and `providerId` stays
  * 'deepseek', so read `quotaWindows` as "quota windows surfaced on this dashboard".
  */
 export class CompositeDashboardProvider implements UsageProvider {

@@ -43,7 +43,7 @@ function createWindow(): BrowserWindow {
 }
 
 async function start(): Promise<void> {
-  app.setAppUserModelId('com.deepseekusagetracker.windows')
+  app.setAppUserModelId('com.apitrackdesktop.windows')
   const store = new AppStore()
   const vault = new SafeStorageVault(path.join(app.getPath('userData'), 'secure', 'credentials.v1.json'))
   await vault.initialize()
@@ -77,7 +77,7 @@ function reportFatalStartupError(error: unknown): void {
   const detail = error instanceof Error ? error.message : String(error)
   logger.error('Fatal startup error', error)
   try {
-    dialog.showErrorBox('DeepSeek Usage Tracker could not start', `${detail}\n\nThe application will now close.`)
+    dialog.showErrorBox('API track desktop could not start', `${detail}\n\nThe application will now close.`)
   } catch {
     // The dialog can be unavailable during very early startup failures.
   }
