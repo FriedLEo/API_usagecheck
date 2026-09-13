@@ -1,4 +1,6 @@
-# DeepSeek Usage Tracker
+# API_usagecheck
+
+A windows tool to check on your AI API usage. Supports deepseek and Opencode Go. Supports Deepseek peak/trough pricing time updates.
 
 A Windows tray application that keeps DeepSeek pricing, balance, spend, and token usage one shortcut away.
 
@@ -10,6 +12,7 @@ A Windows tray application that keeps DeepSeek pricing, balance, spend, and toke
 - Live official DeepSeek balance
 - Live detailed cost/token history through an opt-in experimental Platform session connection
 - Peak/off-peak indicator and current pricing
+- OpenCode Zen "Go" subscription quota windows (experimental)
 - Encrypted local credential storage using Electron `safeStorage` on Windows
 - Provider-capability architecture for future Codex and Gemini integrations
 
@@ -35,4 +38,4 @@ The beta installer is currently unsigned. Windows SmartScreen or an organization
 
 ## Credential setup
 
-The normal DeepSeek API key provides account balance only. Detailed dashboard statistics require your Platform `userToken`. The app includes guided instructions and never asks for your DeepSeek password. Secrets are not returned to the dashboard renderer or written to logs.
+The normal DeepSeek API key provides account balance only. Detailed dashboard statistics require your Platform `userToken`. An optional OpenCode Zen API key adds Go subscription quota; it is sent only to `opencode.ai`. The app includes guided instructions and never asks for your DeepSeek password. Secrets are not returned to the dashboard renderer or written to logs.
