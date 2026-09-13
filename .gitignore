@@ -1,0 +1,16 @@
+node_modules/
+out/
+dist/
+release/
+release-final/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.tmp-*
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
